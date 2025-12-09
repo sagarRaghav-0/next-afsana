@@ -28,7 +28,7 @@ const About = () => {
                             cherished for generations.
                         </p>
                         <p>
-                            Whether you're celebrating love, marking a special
+                            Whether you&apos;re celebrating love, marking a special
                             occasion, or simply treating yourself, we invite you to
                             explore our collection and experience the celestial
                             elegance that defines us.
@@ -49,8 +49,8 @@ const About = () => {
 
                     <div>
                         <p>At Celestique, we believe that jewelry is more than just an
-                            accessory; it's a timeless expression of elegance and a
-                            celebration of life's most precious moments. With a legacy
+                            accessory; it&apos;s a timeless expression of elegance and a
+                            celebration of life&apos;s most precious moments. With a legacy
                             spanning over decades, our brand has become
                             synonymous with exceptional craftsmanship and
                             sophistication.
