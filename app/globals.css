@@ -3,10 +3,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --banner-color-1: #b3ada6;
+  --banner-color-1: #d7d1c8;
   --banner-color-2: #d6cec3;
   --banner-color-3: #d6cec3;
   --banner-color-4: #d6cec3;
+  --main-color: #faf6f6;
 
   --sb-color: #fcfdf5;
 

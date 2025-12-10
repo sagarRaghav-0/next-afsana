@@ -1,7 +1,6 @@
 "use client";
 import Footer from "@/components/common/Footer";
 import Header from "@/components/common/Header";
-import BottomBanner from "@/components/layout/About";
 import { cartItemsUpload } from "@/lib/services/cartrelated/cartItemsUpload";
 import { addNewReview } from "@/lib/services/reviewRelated/addReview";
 import { addToCart } from "@/redux/slices/cartslice";
@@ -255,10 +254,8 @@ const Page = ({ params }: { params: Promise<{ id: string }> }) => {
                             </div>
                         </div>
             }
-            <BottomBanner />
+
             <Footer />
-
-
         </>
     );
 };

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const About = () => {
     return (
-        <div className="relative w-full px-4 md:px-15 overflow-hidden py-15 bg-[var(--sb-color)]">
+        <div className="relative w-full px-4 md:px-15 overflow-hidden pt-20 pb-7 bg-[var(--sb-color)]">
 
             <div className='flex w-full items-center justify-between'>
                 <div className='basis-[45%] flex-col space-y-8'>

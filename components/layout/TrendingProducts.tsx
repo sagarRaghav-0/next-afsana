@@ -61,7 +61,7 @@ const TrendingProducts = () => {
     updateDataInSupabase(item);
 
     setClickedProductId(item.id ?? null);
-    setTimeout(() => setClickedProductId(null), 2000);
+    setTimeout(() => setClickedProductId(null), 1000);
 
     console.log(item)
   };
@@ -95,29 +95,29 @@ const TrendingProducts = () => {
   // }
 
   return (
-    <div className="mb-20 px-4">
-      <h2 className="text-center font-semibold text-3xl sm:text-4xl md:text-5xl py-10 tracking-wide">
-        Trending Products
+    <div className="pb-15 px-4 md:px-15 bg-[var(--sb-color)]">
+      <h2 className="text-left font-crl w-2/3 text-3xl sm:text-4xl md:text-9xl py-14 text-[var(--banner-color-1)]">
+        OUR MOST LOVED PRODUCTS
       </h2>
 
       {
         loading ? <div className="text-center py-10 text-gray-600">Loading trending products...</div>
           :
-          <div className="flex flex-wrap justify-evenly gap-8 max-w-[1200px] mx-auto">
+          <div className="flex flex-wrap space-y-2 justify-evenly max-w-[1500px] ">
             {products.map((product: Product) => (
               <div
                 key={product.id}
-                className="group relative w-[45%] sm:w-[48%] md:w-[30%] lg:w-[22%] flex flex-col items-center  text-center 
-              bg-[#f9f9f9] rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-4"
+                className="group relative  flex flex-col items-center  text-center 
+               rounded-xl hover:shadow-xl transition-all duration-300 p-4"
               >
                 {/* Bag icon or ✔ check */}
-                <div className="absolute top-5 right-5 transition-opacity duration-300 z-10  hidden md:block">
+                <div className="absolute top-6 right-7 transition-opacity duration-300 z-10  hidden md:block">
                   {clickedProductId === product.id ? (
                     <span className="text-green-600 text-xl">✔</span>
                   ) : (
                     <FaShoppingBag
                       size={24}
-                      className="text-gray-700 md:opacity-0 md:group-hover:opacity-100 cursor-pointer"
+                      className="text-[var(--btn-color)] md:opacity-0 md:group-hover:opacity-100 cursor-pointer"
                       onClick={() => handleAddToCart({ ...product, quantity: 1 })}
                     />
                   )}
@@ -130,9 +130,9 @@ const TrendingProducts = () => {
                     <Image
                       src={product.images || "/placeholder.png"}
                       width={270}
-                      height={270}
+                      height={230}
                       alt={product.name || "Product"}
-                      className="rounded-lg p-2 mb-4 shadow-sm object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="rounded-lg p-2 mb-4  object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </Link>
                 </div>

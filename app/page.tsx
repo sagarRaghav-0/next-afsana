@@ -1,14 +1,18 @@
 "use client";
 
+import Footer from "@/components/common/Footer";
 import Header from "@/components/common/Header";
 import About from "@/components/layout/About";
+import OurProducts from "@/components/layout/OurProducts";
+import ScrollToTop from "@/components/layout/ScrollTop";
+import TrendingProducts from "@/components/layout/TrendingProducts";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <>
-      <div className="w-full text-white overflow-x-hidden bg-[linear-gradient(135deg,var(--banner-color-1),var(--banner-color-2),var(--banner-color-3),var(--banner-color-4))]">
+      <div className="w-full text-[var(--main-color)] overflow-x-hidden bg-[linear-gradient(135deg,var(--banner-color-1),var(--banner-color-2),var(--banner-color-3),var(--banner-color-4))]">
         <Header />
 
         {/* Banner Section */}
@@ -25,7 +29,7 @@ export default function Home() {
 
               {/* <h1 className="text-[12rem] font-thin font-crl tracking-[100px]  my-[-55px]">
             AFSANA
-          </h1> */}
+             </h1> */}
 
               <h1 className="text-[12rem] font-thin font-crl flex justify-center space-x-25 my-[-55px]">
                 <span>A</span>
@@ -115,6 +119,10 @@ export default function Home() {
         </div>
       </div>
       <About />
+      <OurProducts />
+      <TrendingProducts />
+      <Footer />
+      <ScrollToTop />
     </>
   );
 }
