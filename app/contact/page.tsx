@@ -1,6 +1,5 @@
 import Footer from "@/components/common/Footer";
 import Header from "@/components/common/Header";
-import BottomBanner from "@/components/layout/About";
 import ContactSection from "@/components/layout/Contact";
 import ScrollToTop from "@/components/layout/ScrollTop";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
@@ -27,7 +26,7 @@ const Contact = () => {
             <ContactSection />
 
             <div className='bg-[var(--bbs-color)]  flex flex-col items-center space-y-5 py-10 md:py-20 '>
-                <h2>Follow us @E Com Co.</h2>
+                <h2>Follow us @AFSANAJEWELS.</h2>
                 <div className='flex gap-10 '>
                     <FaFacebook size={40} />
                     <FaInstagram size={40} />
@@ -35,7 +34,6 @@ const Contact = () => {
                     <FaYoutube size={40} />
                 </div>
             </div>
-            <BottomBanner />
             <ScrollToTop />
             <Footer />
 

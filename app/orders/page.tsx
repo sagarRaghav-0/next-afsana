@@ -1,7 +1,6 @@
 'use client';
 import Footer from '@/components/common/Footer';
 import Header from '@/components/common/Header';
-import BottomBanner from '@/components/layout/About';
 import { showOrder } from '@/lib/services/orderRelated/showOrder';
 import { Order } from '@/types/order';
 import { useUser } from '@clerk/nextjs';
@@ -155,7 +154,6 @@ const OrdersPage = () => {
                     </div>
                 )}
             </div>
-            <BottomBanner />
             <Footer />
         </>
     );

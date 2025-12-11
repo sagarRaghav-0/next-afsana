@@ -2,7 +2,6 @@
 
 import Footer from '@/components/common/Footer';
 import Header from '@/components/common/Header';
-import BottomBanner from '@/components/layout/About';
 import ScrollToTop from '@/components/layout/ScrollTop';
 import { cartItemsUpload } from '@/lib/services/cartrelated/cartItemsUpload';
 import { addToCart } from '@/redux/slices/cartslice';
@@ -160,7 +159,7 @@ const Shop = () => {
 
             <hr className="md:my-2 mb-10 border-gray-300" />
 
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-10 md:gap-10 md:px-10 sm:px-8 px-4 py-10">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-5 sm:gap-10 md:gap-10 md:px-10 sm:px-8 px-4 py-10">
                 {sortedProducts.slice(0, visibleCount).map((product: Product) => (
                     <Link key={product.id} href={`/shop/productdetail/${product.id}`} onClick={() => handleSingleProduct(product)}>
                         <div className="flex flex-col items-center justify-center p-6 rounded-2xl shadow-sm relative group h-full">
@@ -182,8 +181,8 @@ const Shop = () => {
                             </div>
                             <Image
                                 src={product.images}
-                                width={200}
-                                height={200}
+                                width={270}
+                                height={230}
                                 alt={product.name}
                                 className="rounded-xl"
                             />
@@ -244,7 +243,6 @@ const Shop = () => {
                 )
             }
 
-            <BottomBanner />
             <ScrollToTop />
             <Footer />
         </div >

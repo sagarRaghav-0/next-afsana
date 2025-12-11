@@ -134,14 +134,14 @@ const Header = () => {
         </div>
 
         <nav className="flex flex-col items-center px-6 py-4 gap-4 text-black text-md font-medium">
-          <Link href="/" onClick={toggleMenu} className={pathname === "/" ? "text-[var(--btn-color)]" : ""}>Home</Link>
+          {/* <Link href="/" onClick={toggleMenu} className={pathname === "/" ? "text-[var(--btn-color)]" : ""}>Home</Link>
           <Link href="#" onClick={toggleMenu} className={isShop ? "text-[var(--btn-color)]" : ""}>Shop</Link>
           <Link href="/#" onClick={toggleMenu} className={pathname === "/about" ? "text-[var(--btn-color)]" : ""}>About</Link>
-          <Link href="/#" onClick={toggleMenu} className={isContact ? "text-[var(--btn-color)]" : ""}>Contact</Link>
-          {/* <Link href="/" onClick={toggleMenu} className={pathname === "/" ? "text-[var(--btn-color)]" : ""}>Home</Link>
+          <Link href="/#" onClick={toggleMenu} className={isContact ? "text-[var(--btn-color)]" : ""}>Contact</Link> */}
+          <Link href="/" onClick={toggleMenu} className={pathname === "/" ? "text-[var(--btn-color)]" : ""}>Home</Link>
           <Link href="/shop" onClick={toggleMenu} className={isShop ? "text-[var(--btn-color)]" : ""}>Shop</Link>
           <Link href="/about" onClick={toggleMenu} className={pathname === "/about" ? "text-[var(--btn-color)]" : ""}>About</Link>
-          <Link href="/contact" onClick={toggleMenu} className={isContact ? "text-[var(--btn-color)]" : ""}>Contact</Link> */}
+          <Link href="/contact" onClick={toggleMenu} className={isContact ? "text-[var(--btn-color)]" : ""}>Contact</Link>
 
           {
             user && (
